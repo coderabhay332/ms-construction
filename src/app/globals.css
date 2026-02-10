@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #001a33;
+
+  --color-card: #fff7f1;
+  --color-card-foreground: #001a33;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #001a33;
+
+  --color-primary: #ee5e35;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #001a33;
+  --color-secondary-foreground: #ffffff;
+
+  --color-muted: #fff7f1;
+  --color-muted-foreground: #555555;
+
+  --color-accent: #ee5e35;
+  --color-accent-foreground: #ffffff;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #ee5e35;
+
+  --color-chart-1: #ee5e35;
+  --color-chart-2: #001a33;
+  --color-chart-3: #555555;
+  --color-chart-4: #ced4da;
+  --color-chart-5: #fff7f1;
+
+  --color-sidebar: #ffffff;
+  --color-sidebar-foreground: #001a33;
+  --color-sidebar-primary: #ee5e35;
+  --color-sidebar-primary-foreground: #ffffff;
+  --color-sidebar-accent: #fff7f1;
+  --color-sidebar-accent-foreground: #ee5e35;
+  --color-sidebar-border: #e2e8f0;
+  --color-sidebar-ring: #ee5e35;
+
+  --color-peach: #fff7f1;
+  --color-navy: #001a33;
+  --color-orange: #ee5e35;
+  --color-gray-placeholder: #ced4da;
+  --color-text-body: #555555;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-lg: 5px;
+  --radius-md: 4px;
+  --radius-sm: 2px;
+  --radius-full: 50px;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #e2e8f0;
+  }
+
+  :root {
+    --background: #ffffff;
+    --foreground: #001a33;
+    --card: #fff7f1;
+    --card-foreground: #001a33;
+    --popover: #ffffff;
+    --popover-foreground: #001a33;
+    --primary: #ee5e35;
+    --primary-foreground: #ffffff;
+    --secondary: #001a33;
+    --secondary-foreground: #ffffff;
+    --muted: #fff7f1;
+    --muted-foreground: #555555;
+    --accent: #ee5e35;
+    --accent-foreground: #ffffff;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #ee5e35;
+    --radius: 5px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: var(--navy);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-body);
+    margin-bottom: 1.25rem;
+  }
+
+  a {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .btn-primary {
+    background-color: var(--orange);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+
+  .service-card {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-card-image {
+    background-color: var(--gray-placeholder);
+    aspect-ratio: 16/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-card-content {
+    background-color: var(--peach);
+    padding: 30px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

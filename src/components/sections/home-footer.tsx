@@ -103,13 +103,13 @@ const HomeFooter = () => {
               <div className="flex items-start gap-3">
                 <span className="text-[#ED5A2D] mt-1 shrink-0"><MapPin size={18} /></span>
                 <span className="text-[#000000] font-semibold text-[16px]">
-                  202, Solitaire Business Hub III,<br />
-                  Baner, Pune-411045
+                  420, XXXXXXX XXXX,<br />
+                  XXXXXXXX, XXXXXXXX
                 </span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-[#ED5A2D] mt-1 shrink-0"><Phone size={18} /></span>
-                <span className="text-[#000000] font-semibold text-[16px]">+91 8115603603</span>
+                <span className="text-[#000000] font-semibold text-[16px]">+91 XXXXXXXXXX</span>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ const HomeFooter = () => {
         {/* Bottom Bar */}
         <div className="border-t border-[#e5e5e5] pt-8 flex flex-col md:flex-row justify-center items-center relative">
           <p className="text-[#555555] text-[15px] font-medium text-center">
-            &#9426;Copyright 2025 MS Construction . All rights reserved
+            &#9426;Copyright 2025 Zerototenx . All rights reserved
           </p>
 
           <div

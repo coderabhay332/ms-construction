@@ -84,13 +84,13 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-[#EE5E35] mt-1 shrink-0" />
                 <p className="text-[#555555] text-[16px] m-0 leading-[1.4]">
-                  202, Solitaire Business Hub III, Baner, Pune-411045
+                  420, xxxxx xxxx xxxx, xxxxx, xxxxx-xxxxxx
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <Phone size={18} className="text-[#EE5E35] mt-1 shrink-0" />
-                <a href="tel:+918115603603" className="text-[#555555] text-[16px] hover:text-[#EE5E35] transition-colors">
-                  +91 8115603603
+                <a href="tel:+91xxxxxxx" className="text-[#555555] text-[16px] hover:text-[#EE5E35] transition-colors">
+                  +91 xxxxxxxxxx
                 </a>
               </div>
             </div>
@@ -100,7 +100,7 @@ const Footer = () => {
         {/* Copyright Bar */}
         <div className="mt-[30px] text-center">
           <p className="text-[#555555] text-[16px] m-0">
-            ⓒCopyright 2025 MS Construction . All rights reserved
+            ⓒCopyright 2025 Zerototenx . All rights reserved
           </p>
         </div>
       </div>

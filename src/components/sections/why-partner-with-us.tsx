@@ -29,10 +29,12 @@ const WhyPartnerWithUs = () => {
         {/* Header Text */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-[36px] font-bold text-black mb-6 leading-[1.3] tracking-[-0.01em]">
-            Why Global Firms Partner With Us
+            About Preview
+
           </h2>
           <p className="text-[16px] text-[#555555] leading-[1.6] mb-4">
-            We Work As An Extension Of Your In-House Engineering Team Helping You Manage Workload Peaks, Reduce Operational Costs, And Deliver Projects Faster Without Compromising Quality, Compliance, Or Control.
+            We are a professional construction company offering end-to-end construction solutions.
+From planning to final handover, we ensure quality, safety, and clear communication at every stage.
           </p>
           <span className="text-[14px] text-[#555555] font-normal uppercase tracking-wider block mt-2">
             What Defines Us

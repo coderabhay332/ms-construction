@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
 
         {/* Full-width Hero Image Container */}
         <div className="relative w-full">
-          <div className="relative rounded-[16px] overflow-hidden shadow-2xl min-h-[500px] lg:min-h-[600px]">
+          <div className="relative rounded-[16px] overflow-hidden shadow-2xl min-h-[500px] lg:min-h-[550px]">
             {/* Hero Image - Full Width */}
             <Image
               src="/hero.webp"
@@ -49,11 +49,12 @@ const HeroSection: React.FC = () => {
             {/* Text Overlay - Left Side */}
             <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-12 lg:px-16">
               <div className="max-w-[300px]">
-                <h1 className="text-[32px] md:text-[42px] lg:text-[52px] font-bold leading-[1.1] mb-4">
-                  <span className="text-white">Building Quality Homes &</span>
-                  <br />
-                  <span className="text-[#ed5a2d]">Projects You Can Trust</span>
-                  <br />
+                <h1 className="text-[20px] md:text-[30px] lg:text-[26px] font-bold leading-[1.1] mb-4">
+                  <span className="text-orange-500">Building Quality Homes</span>
+                </h1>
+
+                <h1 className="text-[20px] md:text-[30px] lg:text-[18px] font-bold leading-[1.2] mb-4">
+                  <span className="text-white">We deliver residential and commercial construction projects with quality workmanship, transparent pricing, and on-time delivery.</span>
                 </h1>
 
                 {/* Stats Badges */}

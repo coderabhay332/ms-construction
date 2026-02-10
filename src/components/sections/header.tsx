@@ -24,14 +24,30 @@ const Header = () => {
   }, []);
 
   const menuItems = [
-    { label: "Home", href: "/" },
-    { label: "About Us", href: "/about-us" },
-    { label: "Services", href: "/our-services" },
-    { label: "Industries", href: "/industries" },
-    { label: "Clients", href: "/clients" },
-    { label: "Tools", href: "/tools" },
-    { label: "Contact Us", href: "/contact-us" },
+    { label: "Home", href: "#home" },
+    { label: "Services", href: "#services" },
+    { label: "Projects", href: "#projects" },
+    { label: "About Us", href: "#about" },
+    { label: "Packages", href: "#packages" },
+    { label: "Contact", href: "#contact" },
   ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const headerOffset = 80; // Account for fixed header
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   return (
     <header
@@ -46,7 +62,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
 
           <div className="flex-shrink-0">
-            <Link href="/" className="block">
+            <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="block">
               <Image
                 src="/mk-logo.png"
                 alt="MK Construction Logo"
@@ -55,20 +71,21 @@ const Header = () => {
                 className="h-auto w-[80px] lg:w-[100px] object-contain"
                 priority
               />
-            </Link>
+            </a>
           </div>
 
           <nav className="hidden lg:flex items-center justify-center flex-grow">
             <ul className="flex items-center gap-[30px] xl:gap-[40px]">
               {menuItems.map((item) => (
                 <li key={item.label}>
-                  <Link
+                  <a
                     href={item.href}
-                    className="text-[16px] font-semibold text-[#000000] hover:text-[#ed5a2d] transition-colors duration-300 relative group"
+                    onClick={(e) => handleNavClick(e, item.href)}
+                    className="text-[16px] font-semibold text-[#000000] hover:text-[#ed5a2d] transition-colors duration-300 relative group cursor-pointer"
                   >
                     {item.label}
                     <span className="absolute bottom-[-5px] left-0 w-0 h-[2px] bg-[#ed5a2d] transition-all duration-300 group-hover:w-full"></span>
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -137,13 +154,16 @@ const Header = () => {
             <ul className="flex flex-col gap-6">
               {menuItems.map((item) => (
                 <li key={item.label}>
-                  <Link
+                  <a
                     href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-[20px] font-bold text-[#000000] hover:text-[#ed5a2d]"
+                    onClick={(e) => {
+                      handleNavClick(e, item.href);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className="text-[20px] font-bold text-[#000000] hover:text-[#ed5a2d] cursor-pointer"
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

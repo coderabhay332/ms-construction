@@ -4,45 +4,45 @@ import { ExternalLink } from 'lucide-react';
 
 const services = [
   {
-    title: "Structural Design & Analysis",
+    title: "Residential Construction",
     subLabels: "RCC | Steel | Composite Structures",
-    description: "Design and analysis of buildings and structures using international design codes. Our deliverables include calculations, drawings, and IFC packages suitable for approvals and construction.",
+    description: "We build high-quality homes with modern amenities, durable materials, and thoughtful layouts. From foundation to finishing, we ensure every detail meets our quality standards.",
     link: "View Structural Design & Analysis",
     url: "#"
   },
   {
-    title: "BIM & Structural Modeling",
+    title: "Commercial Construction",
     subLabels: "Revit | Tekla | Coordination Support",
-    description: "Creation of coordinated structural BIM models to support design development, clash detection, and downstream detailing and construction workflows.",
+    description: "We construct commercial buildings that are functional, durable, and aesthetically appealing. Our projects include retail spaces, offices, and mixed-use developments designed to support business success.",
     link: "View BIM & Structural Modeling",
     url: "#"
   },
   {
-    title: "Shop Drawings & Detailing",
+    title: "Turnkey Projects",
     subLabels: "Steel | Rebar | Precast",
-    description: "Fabrication-ready shop drawings, bar bending schedules, and material take-offs prepared to meet fabricator and site requirements.",
-    link: "View Shop Drawings & Detailing",
+    description: "We offer complete turnkey solutions, managing projects from initial concept through design, procurement, construction, and final handover. Our integrated approach ensures seamless coordination, timely delivery, and consistent quality across all project phases.",
+    link: "View Turnkey Projects",
     url: "#"
   },
   {
-    title: "Design Review & Proof Checking",
+    title: "Renovation & Remodeling",
     subLabels: "Independent QA | Value Engineering| Proof Checking",
-    description: "Third-party checking of designs, calculations, and drawings to verify code compliance, constructability, and optimization opportunities.",
-    link: "View Design Review & Proof Checking",
+    description: "Transform existing spaces with our renovation and remodeling services. We handle everything from planning and design to construction and finishing, ensuring minimal disruption and maximum impact. Our team specializes in modern upgrades, space optimization, and quality renovations that enhance functionality and aesthetics.",
+    link: "View Renovation & Remodeling",
+    url: "#"
+  },
+  {
+    title: "Interior & Finishing Works",
+    subLabels: "RFIs | Coordination | Site Support",
+    description: "We provide comprehensive interior design and finishing services that bring spaces to life. From conceptual design and material selection to installation and final touches, our team delivers high-quality finishes that match your vision. Our expertise includes drywall, painting, flooring, tiling, ceiling work, and complete interior fit-outs for residential and commercial projects.",
+    link: "View Interior & Finishing Works",
     url: "#"
   },
   {
     title: "Project Engineering & Construction Support",
-    subLabels: "RFIs | Coordination | Site Support",
+    subLabels: "Assessment | Load Checks | Retrofit Support",
     description: "Ongoing engineering support during construction, including RFIs, design clarifications, and coordination with site and fabrication teams.",
     link: "View Project Engineering & Construction Support",
-    url: "#"
-  },
-  {
-    title: "Structural Inspections & Audits",
-    subLabels: "Assessment | Load Checks | Retrofit Support",
-    description: "Technical assessments of existing structures, load capacity checks, and engineering recommendations for strengthening or reuse.",
-    link: "View Structural Inspections & Audits",
     url: "#"
   },
 
@@ -55,7 +55,7 @@ const ServicesGrid = () => {
         {/* Section Heading */}
         <div className="text-center mb-[50px]">
           <h2 className="text-[36px] font-bold text-[#001a33] leading-[1.3] mb-0">
-            Structural Engineering Design
+                Services Preview
           </h2>
         </div>
 

@@ -81,7 +81,7 @@ const ContactInfoCards = () => {
           <ContactCard
             icon={<MapPin size={22} />}
             title="Office Address"
-            content="202, Solitaire Business Hub - III,"
+            content="420, Solitaire Business Hub - III,"
             subContent="Baner, Pune-411045"
           />
         </div>

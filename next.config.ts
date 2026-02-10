@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
+import { fileURLToPath } from "node:url";
 import path from "node:path";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const LOADER = path.resolve(__dirname, 'src/visual-edits/component-tagger-loader.js');
 
 const nextConfig: NextConfig = {

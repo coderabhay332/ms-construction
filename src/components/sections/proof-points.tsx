@@ -3,20 +3,20 @@ import React from 'react';
 const ProofPoints = () => {
   const stats = [
     {
-      value: "Years of Experience",
-      label: "5+"
+      value: "5+",
+      label: "Years of Experience"
     },
     {
-      value: "Projects Completed",
-      label: "40+"
+      value: "40+",
+      label: "Projects Completed"
     },
     {
-      value: "On-Time Delivery",
-      label: "98%"
+      value: "98%",
+      label: "On-Time Delivery"
     },
     {
-      value: "Quality Workmanship",
-      label: "100%"
+      value: "100%",
+      label: "Quality Workmanship"
     }
   ];
 

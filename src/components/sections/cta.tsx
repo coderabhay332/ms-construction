@@ -36,7 +36,7 @@ const CTA = () => {
                             <div className="text-2xl">📞</div>
                             <div className="text-left">
                                 <div className="text-[14px] text-[#555555] uppercase tracking-wide">Call Us</div>
-                                <div className="font-bold text-[16px] text-[#001a33]">+1 (555) 123-4567</div>
+                                <div className="font-bold text-[16px] text-[#001a33]">+91 9609806922</div>
                             </div>
                         </div>
 

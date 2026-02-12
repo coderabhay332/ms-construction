@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { Facebook, Linkedin, Instagram, Phone, MapPin, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -9,6 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-10 pb-[60px] border-b border-[#E2E8F0]">
 
           {/* Column 1: Logo & Mission */}
+
           <div className="flex flex-col">
             <div className="mb-[25px]">
               <a href="/">

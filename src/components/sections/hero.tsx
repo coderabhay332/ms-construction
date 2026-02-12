@@ -47,18 +47,21 @@ const HeroSection: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
 
             {/* Text Overlay - Left Side */}
-            <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-12 lg:px-16">
-              <div className="max-w-[300px]">
-                <h1 className="text-[20px] md:text-[30px] lg:text-[26px] font-bold leading-[1.1] mb-4">
-                  <span className="text-orange-500">Building Quality Homes</span>
+            <div className="absolute inset-[-3%] flex flex-col justify-center px-8 md:px-12 lg:px-16">
+              <div className="max-w-[500px]">
+                <h1 className="text-[40px] md:text-[40px] lg:text-[40px] font-bold leading-[1.1] mb-4">
+                  <span className="text-[#ED5A2D]">Building Quality Homes</span>
                 </h1>
 
-                <h1 className="text-[20px] md:text-[30px] lg:text-[18px] font-bold leading-[1.2] mb-4">
-                  <span className="text-white">We deliver residential and commercial construction projects with quality workmanship, transparent pricing, and on-time delivery.</span>
-                </h1>
+             
 
                 {/* Stats Badges */}
 
+              </div>
+              <div className="max-w-[500px]">
+                   <h1 className="text-[25px] md:text-[25px] lg:text-[25px] font-bold leading-[1.2] mb-4">
+                  <span className="text-white">We deliver residential and commercial construction projects with quality workmanship, transparent pricing, and on-time delivery.</span>
+                </h1>
               </div>
             </div>
 

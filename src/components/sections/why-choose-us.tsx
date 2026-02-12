@@ -8,6 +8,7 @@ const WhyChooseUs = () => {
     "Quality materials",
     "Dedicated supervision",
     "Timely project delivery",
+    "24/7 support"
   ];
 
   return (
